@@ -44,11 +44,11 @@ ram.runtime = "50M"
         autoupdate.asset = "^shlink-web-client_.*_dist.zip$"
 
         [resources.sources.main]
-        url = "https://github.com/shlinkio/shlink/releases/download/v4.2.1/shlink4.2.1_php8.2_dist.zip"
-        sha256 = "106adbf68d322d6de32bda0a7d1e351e29b1239c9593d75b2fec95b9552f7bf6"
+        url = "https://github.com/shlinkio/shlink/releases/download/v4.2.1/shlink4.2.1_php8.3_dist.zip"
+        sha256 = "d710b2bb2c48b4284a4cd047daa7f511a0d5f5a12397e4c9b3bbea61b63b7bef"
         autoupdate.strategy = "latest_github_release"
         autoupdate.upstream = "https://github.com/shlinkio/shlink"
-        autoupdate.asset = "^shlink.*_php8.2_dist.zip$"
+        autoupdate.asset = "^shlink.*_php8.3_dist.zip$"
         
 
     [resources.system_user]
@@ -64,7 +64,7 @@ ram.runtime = "50M"
     api.protected = true
 
     [resources.apt]
-    packages = "postgresql, php8.2-apcu, php8.2-pgsql, php8.2-gd, php8.2-curl, php8.2-intl, php8.2-gmp, php8.2-xml"
+    packages = "postgresql, php8.3-apcu, php8.3-pgsql, php8.3-gd, php8.3-curl, php8.3-intl, php8.3-gmp, php8.3-xml"
 
     [resources.database]
     type = "postgresql"
