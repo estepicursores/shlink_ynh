@@ -5,7 +5,7 @@ name = "Shlink"
 description.en = "Self-hosted URL shortener"
 description.fr = "Raccourcisseur d'URL auto-hébergé"
 
-version = "4.2.0~ynh1"
+version = "4.4.0~ynh1"
 
 maintainers = []
 
@@ -16,7 +16,8 @@ userdoc = "https://shlink.io/documentation/"
 code = "https://github.com/shlinkio/shlink"
 
 [integration]
-yunohost = ">= 11.2"
+yunohost = ">= 11.2.30"
+helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
 ldap = false
@@ -36,23 +37,24 @@ ram.runtime = "50M"
 [resources]
     [resources.sources]
         [resources.sources.front]
-        url = "https://github.com/shlinkio/shlink-web-client/releases/download/v4.1.2/shlink-web-client_4.1.2_dist.zip"
-        sha256 = "f704cddb064c6f09c8e11e24a43924bbb5a63e17498d985d3b488611769987bc"
+        url = "https://github.com/shlinkio/shlink-web-client/releases/download/v4.3.0/shlink-web-client_4.3.0_dist.zip"
+        sha256 = "2fb296a2a6b1055b79cb513e6765099e7463a00661821317fd923bfa43491477"
         autoupdate.strategy = "latest_github_release"
         autoupdate.upstream = "https://github.com/shlinkio/shlink-web-client"
         autoupdate.asset = "^shlink-web-client_.*_dist.zip$"
 
         [resources.sources.main]
-        url = "https://github.com/shlinkio/shlink/releases/download/v4.2.0/shlink4.2.0_php8.2_dist.zip"
-        sha256 = "155d8e4af790ee16ce6952661842775f8d7c0351eb58bc82916b5c2eecb971f8"
+        url = "https://github.com/shlinkio/shlink/releases/download/v4.4.0/shlink4.4.0_php8.3_dist.zip"
+        sha256 = "a65dc9fe6ab5c14ebe4bddf28833cbbf4487741311f68c464f115d90e3785e82"
         autoupdate.strategy = "latest_github_release"
         autoupdate.upstream = "https://github.com/shlinkio/shlink"
-        autoupdate.asset = "^shlink.*_php8.2_dist.zip$"
+        autoupdate.asset = "^shlink.*_php8.3_dist.zip$"
         
 
     [resources.system_user]
 
     [resources.install_dir]
+    group = "www-data:r-x"
 
     [resources.permissions]
     main.url = "/"
@@ -62,7 +64,7 @@ ram.runtime = "50M"
     api.protected = true
 
     [resources.apt]
-    packages = "postgresql php8.2-apcu php8.2-pgsql php8.2-gd php8.2-curl php8.2-intl php8.2-gmp php8.2-xml"
+    packages = "postgresql, php8.3-apcu, php8.3-pgsql, php8.3-gd, php8.3-curl, php8.3-intl, php8.3-gmp, php8.3-xml"
 
     [resources.database]
     type = "postgresql"

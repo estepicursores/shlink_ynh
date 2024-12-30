@@ -5,7 +5,9 @@ No se debe editar a mano.
 
 # Shlink para Yunohost
 
-[![Nivel de integración](https://dash.yunohost.org/integration/shlink.svg)](https://ci-apps.yunohost.org/ci/apps/shlink/) ![Estado funcional](https://ci-apps.yunohost.org/ci/badges/shlink.status.svg) ![Estado En Mantención](https://ci-apps.yunohost.org/ci/badges/shlink.maintain.svg)
+[![Nivel de integración](https://apps.yunohost.org/badge/integration/shlink)](https://ci-apps.yunohost.org/ci/apps/shlink/)
+![Estado funcional](https://apps.yunohost.org/badge/state/shlink)
+![Estado En Mantención](https://apps.yunohost.org/badge/maintained/shlink)
 
 [![Instalar Shlink con Yunhost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=shlink)
 
@@ -20,7 +22,7 @@ Shlink is a self-hosted URL shortener which provides both a REST and a CLI inter
 
 Additionally, there's also an official Shlink web client which, by making use of Shlink's REST API, provides a beautiful web UI to handle multiple Shlink instances.
 
-**Versión actual:** 4.2.0~ynh1
+**Versión actual:** 4.4.0~ynh1
 
 ## Capturas
 
@@ -36,7 +38,7 @@ Additionally, there's also an official Shlink web client which, by making use of
 
 ## Información para desarrolladores
 
-Por favor enviar sus correcciones a la [`branch testing`](https://github.com/YunoHost-Apps/shlink_ynh/tree/testing
+Por favor enviar sus correcciones a la [rama `testing`](https://github.com/YunoHost-Apps/shlink_ynh/tree/testing).
 
 Para probar la rama `testing`, sigue asÍ:
 
