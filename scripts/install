@@ -15,7 +15,6 @@ key=$(ynh_string_random --length=36)
 ynh_script_progression "Setting up source files..."
 
 ynh_setup_source --dest_dir="$install_dir"
-ynh_setup_source --dest_dir="$install_dir" --source_id="front"
 
 #=================================================
 # PHP-FPM CONFIGURATION
